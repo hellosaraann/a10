@@ -1,4 +1,4 @@
-/* Add your styles here */
+/* general */
 body {
   font-family: sans-serif;
   line-height: 1.5em;
@@ -6,6 +6,10 @@ body {
   letter-spacing: .2em;
   font-size: .8em;
   color: #404541;
+}
+
+[v-block] {
+  display: none;
 }
 
 h2 {
@@ -16,6 +20,8 @@ h2 {
   font-weight: 900;
   color: #7BBBA8;
 }
+
+/* table and container styles */
 
 .table {
   margin: 5rem auto;
@@ -31,6 +37,8 @@ h2 {
   align-items: stretch;
   justify-content: space-between;
 }
+
+/* table item styles, including headings */
 
 .item {
   display: inline-block;
@@ -64,15 +72,35 @@ img {
   width: 100%;
 }
 
+/* conditional styles */
+
 .odd p.item.small {
-  /* border: 1px solid #6CC389; */
   background-color: #fcfbf3;
 }
 
-/* .odd {
-  background-color: #6CC389;
-} */
+.favoritePlant {
+  border: 2px solid #F0D82F;
+}
 
-[v-block] {
-  display: none;
+/* footer styles */
+
+.key.favoritePlant {
+  background-color: white;
+  border: 2px solid #F0D82F;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer .item {
+  width: 100%;
+  text-align: right;
+}
+
+.footer .key {
+  display: inline-block;
+  padding: auto .5rem;
+  margin: auto .25rem;
+  vertical-align: middle;
+  font-size: .8em;
+  font-style: italic;
 }

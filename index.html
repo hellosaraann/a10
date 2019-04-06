@@ -22,8 +22,12 @@
         <h2 class="item small list-headers">Special</h2>
       </div>
       <div  class="container"
+      <!--loop v-for directive and conditional v-bind classes-->
             v-for='(plant, index) in plants'
-            v-bind:class='{odd: (index+1) % 2 !== 0}'>
+            v-bind:class='{
+              odd: (index+1) % 2 !== 0,
+              favoritePlant: plant.specialThing.toLowerCase().includes("favorite")
+            }'>
           <p class='item small photo'>
             <img v-bind:src='plant.plantPic' />
           </p>
@@ -32,6 +36,14 @@
           <p class='item small'>{{ plant.leaves }}</p>
           <p class='item small'>{{ plant.specialThing }}</p>
       </div>
+
+      <div class='container footer'>
+        <div class="item">
+          <div class='favoritePlant key'></div>
+          <p class='key'>= favorite.</p>
+        </div>
+      </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>

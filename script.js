@@ -1,3 +1,5 @@
+//collection array
+
 const favoriteHousePlants = [{
 	name: "Snake Plant",
   light: "any",
@@ -29,6 +31,9 @@ const favoriteHousePlants = [{
   specialThing: 'Lives through anything / supposed to be lucky',
   plantPic: 'images/zz-plant.jpg'
 }];
+
+
+//vue var
 
 var vm = new Vue({
   el: "#myCollection",
