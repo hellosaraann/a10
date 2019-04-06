@@ -4,7 +4,7 @@ const favoriteHousePlants = [{
 	name: "Snake Plant",
   light: "any",
   leaves: "tall and pointy",
-  specialThing: 'NASA recommended air purifier lets out oxygen at night',
+  specialThing: 'NASA touted air purifier lets out oxygen at night',
   plantPic: 'images/snake-plant.jpg'
 },{
 	name: "Rubber Tree",

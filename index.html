@@ -22,7 +22,6 @@
         <h2 class="item small list-headers">Special</h2>
       </div>
       <div  class="container"
-      <!--loop v-for directive and conditional v-bind classes-->
             v-for='(plant, index) in plants'
             v-bind:class='{
               odd: (index+1) % 2 !== 0,
